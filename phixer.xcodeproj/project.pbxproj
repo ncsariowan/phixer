@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D332EDC829A5F84D0063F6D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332EDC729A5F84D0063F6D5 /* AppDelegate.swift */; };
+		D332EDCA29A5F84D0063F6D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332EDC929A5F84D0063F6D5 /* ContentView.swift */; };
+		D332EDCC29A5F84D0063F6D5 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D332EDCB29A5F84D0063F6D5 /* Experience.rcproject */; };
+		D332EDCE29A5F84E0063F6D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D332EDCD29A5F84E0063F6D5 /* Assets.xcassets */; };
+		D332EDD129A5F84E0063F6D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D332EDD029A5F84E0063F6D5 /* Preview Assets.xcassets */; };
+		D332EDDB29A5F84E0063F6D5 /* phixerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332EDDA29A5F84E0063F6D5 /* phixerTests.swift */; };
+		D332EDE529A5F84E0063F6D5 /* phixerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332EDE429A5F84E0063F6D5 /* phixerUITests.swift */; };
+		D332EDE729A5F84E0063F6D5 /* phixerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D332EDE629A5F84E0063F6D5 /* phixerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D332EDD729A5F84E0063F6D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D332EDBC29A5F84D0063F6D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D332EDC329A5F84D0063F6D5;
+			remoteInfo = phixer;
+		};
+		D332EDE129A5F84E0063F6D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D332EDBC29A5F84D0063F6D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D332EDC329A5F84D0063F6D5;
+			remoteInfo = phixer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D332EDC429A5F84D0063F6D5 /* phixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D332EDC729A5F84D0063F6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D332EDC929A5F84D0063F6D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D332EDCB29A5F84D0063F6D5 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		D332EDCD29A5F84E0063F6D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D332EDD029A5F84E0063F6D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D332EDD629A5F84E0063F6D5 /* phixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D332EDDA29A5F84E0063F6D5 /* phixerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phixerTests.swift; sourceTree = "<group>"; };
+		D332EDE029A5F84E0063F6D5 /* phixerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = phixerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D332EDE429A5F84E0063F6D5 /* phixerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phixerUITests.swift; sourceTree = "<group>"; };
+		D332EDE629A5F84E0063F6D5 /* phixerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phixerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D332EDC129A5F84D0063F6D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332EDD329A5F84E0063F6D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332EDDD29A5F84E0063F6D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D332EDBB29A5F84D0063F6D5 = {
+			isa = PBXGroup;
+			children = (
+				D332EDC629A5F84D0063F6D5 /* phixer */,
+				D332EDD929A5F84E0063F6D5 /* phixerTests */,
+				D332EDE329A5F84E0063F6D5 /* phixerUITests */,
+				D332EDC529A5F84D0063F6D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D332EDC529A5F84D0063F6D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D332EDC429A5F84D0063F6D5 /* phixer.app */,
+				D332EDD629A5F84E0063F6D5 /* phixerTests.xctest */,
+				D332EDE029A5F84E0063F6D5 /* phixerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D332EDC629A5F84D0063F6D5 /* phixer */ = {
+			isa = PBXGroup;
+			children = (
+				D332EDC729A5F84D0063F6D5 /* AppDelegate.swift */,
+				D332EDC929A5F84D0063F6D5 /* ContentView.swift */,
+				D332EDCB29A5F84D0063F6D5 /* Experience.rcproject */,
+				D332EDCD29A5F84E0063F6D5 /* Assets.xcassets */,
+				D332EDCF29A5F84E0063F6D5 /* Preview Content */,
+			);
+			path = phixer;
+			sourceTree = "<group>";
+		};
+		D332EDCF29A5F84E0063F6D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D332EDD029A5F84E0063F6D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D332EDD929A5F84E0063F6D5 /* phixerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D332EDDA29A5F84E0063F6D5 /* phixerTests.swift */,
+			);
+			path = phixerTests;
+			sourceTree = "<group>";
+		};
+		D332EDE329A5F84E0063F6D5 /* phixerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D332EDE429A5F84E0063F6D5 /* phixerUITests.swift */,
+				D332EDE629A5F84E0063F6D5 /* phixerUITestsLaunchTests.swift */,
+			);
+			path = phixerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D332EDC329A5F84D0063F6D5 /* phixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D332EDEA29A5F84E0063F6D5 /* Build configuration list for PBXNativeTarget "phixer" */;
+			buildPhases = (
+				D332EDC029A5F84D0063F6D5 /* Sources */,
+				D332EDC129A5F84D0063F6D5 /* Frameworks */,
+				D332EDC229A5F84D0063F6D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = phixer;
+			productName = phixer;
+			productReference = D332EDC429A5F84D0063F6D5 /* phixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D332EDD529A5F84E0063F6D5 /* phixerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D332EDED29A5F84E0063F6D5 /* Build configuration list for PBXNativeTarget "phixerTests" */;
+			buildPhases = (
+				D332EDD229A5F84E0063F6D5 /* Sources */,
+				D332EDD329A5F84E0063F6D5 /* Frameworks */,
+				D332EDD429A5F84E0063F6D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D332EDD829A5F84E0063F6D5 /* PBXTargetDependency */,
+			);
+			name = phixerTests;
+			productName = phixerTests;
+			productReference = D332EDD629A5F84E0063F6D5 /* phixerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D332EDDF29A5F84E0063F6D5 /* phixerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D332EDF029A5F84E0063F6D5 /* Build configuration list for PBXNativeTarget "phixerUITests" */;
+			buildPhases = (
+				D332EDDC29A5F84E0063F6D5 /* Sources */,
+				D332EDDD29A5F84E0063F6D5 /* Frameworks */,
+				D332EDDE29A5F84E0063F6D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D332EDE229A5F84E0063F6D5 /* PBXTargetDependency */,
+			);
+			name = phixerUITests;
+			productName = phixerUITests;
+			productReference = D332EDE029A5F84E0063F6D5 /* phixerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D332EDBC29A5F84D0063F6D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D332EDC329A5F84D0063F6D5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D332EDD529A5F84E0063F6D5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D332EDC329A5F84D0063F6D5;
+					};
+					D332EDDF29A5F84E0063F6D5 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D332EDC329A5F84D0063F6D5;
+					};
+				};
+			};
+			buildConfigurationList = D332EDBF29A5F84D0063F6D5 /* Build configuration list for PBXProject "phixer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D332EDBB29A5F84D0063F6D5;
+			productRefGroup = D332EDC529A5F84D0063F6D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D332EDC329A5F84D0063F6D5 /* phixer */,
+				D332EDD529A5F84E0063F6D5 /* phixerTests */,
+				D332EDDF29A5F84E0063F6D5 /* phixerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D332EDC229A5F84D0063F6D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332EDD129A5F84E0063F6D5 /* Preview Assets.xcassets in Resources */,
+				D332EDCE29A5F84E0063F6D5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332EDD429A5F84E0063F6D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332EDDE29A5F84E0063F6D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D332EDC029A5F84D0063F6D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332EDCA29A5F84D0063F6D5 /* ContentView.swift in Sources */,
+				D332EDC829A5F84D0063F6D5 /* AppDelegate.swift in Sources */,
+				D332EDCC29A5F84D0063F6D5 /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332EDD229A5F84E0063F6D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332EDDB29A5F84E0063F6D5 /* phixerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D332EDDC29A5F84E0063F6D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D332EDE729A5F84E0063F6D5 /* phixerUITestsLaunchTests.swift in Sources */,
+				D332EDE529A5F84E0063F6D5 /* phixerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D332EDD829A5F84E0063F6D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D332EDC329A5F84D0063F6D5 /* phixer */;
+			targetProxy = D332EDD729A5F84E0063F6D5 /* PBXContainerItemProxy */;
+		};
+		D332EDE229A5F84E0063F6D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D332EDC329A5F84D0063F6D5 /* phixer */;
+			targetProxy = D332EDE129A5F84E0063F6D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D332EDE829A5F84E0063F6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D332EDE929A5F84E0063F6D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D332EDEB29A5F84E0063F6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"phixer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs347.phixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D332EDEC29A5F84E0063F6D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"phixer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs347.phixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D332EDEE29A5F84E0063F6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs347.phixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phixer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/phixer";
+			};
+			name = Debug;
+		};
+		D332EDEF29A5F84E0063F6D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs347.phixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/phixer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/phixer";
+			};
+			name = Release;
+		};
+		D332EDF129A5F84E0063F6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs347.phixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phixer;
+			};
+			name = Debug;
+		};
+		D332EDF229A5F84E0063F6D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cs347.phixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = phixer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D332EDBF29A5F84D0063F6D5 /* Build configuration list for PBXProject "phixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332EDE829A5F84E0063F6D5 /* Debug */,
+				D332EDE929A5F84E0063F6D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D332EDEA29A5F84E0063F6D5 /* Build configuration list for PBXNativeTarget "phixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332EDEB29A5F84E0063F6D5 /* Debug */,
+				D332EDEC29A5F84E0063F6D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D332EDED29A5F84E0063F6D5 /* Build configuration list for PBXNativeTarget "phixerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332EDEE29A5F84E0063F6D5 /* Debug */,
+				D332EDEF29A5F84E0063F6D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D332EDF029A5F84E0063F6D5 /* Build configuration list for PBXNativeTarget "phixerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D332EDF129A5F84E0063F6D5 /* Debug */,
+				D332EDF229A5F84E0063F6D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D332EDBC29A5F84D0063F6D5 /* Project object */;
+}
