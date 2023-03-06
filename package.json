@@ -1,0 +1,24 @@
+{
+  "name": "phixer",
+  "version": "1.0.0",
+  "description": "Creating Phicons Through Commodity Sensing",
+  "main": "index.js",
+  "repository": "https://github.com/ncsariowan/phixer.git",
+  "author": "Tristan <24882191+Kizjkre@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vite": "^4.1.4",
+    "vite-plugin-solid": "^2.6.1"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.7.0",
+    "solid-js": "^1.6.11"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  }
+}
