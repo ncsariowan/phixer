@@ -1,3 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
 .home {
-  color: red;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e8f2ff;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.home::before {
+  content: "Nathan, Tristan, and Gabe's Cs347 Final project";
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title, .subtitle {
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px orange;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 2 rem;
+  margin-bottom: 3rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  color: orange;
+  font-size: 1.2rem;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
