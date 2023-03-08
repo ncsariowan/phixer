@@ -25,10 +25,31 @@ video.addEventListener('canplay', () => {
 export const stop = () => {
   video.srcObject.getTracks().forEach(track => track.stop());
   streaming = false;
+  node.stop();
 };
 
+var node;
+var nodeGain;
+var pan;
+
 export default (id, x = 150, y = 60, w = 63, h = 125) =>
-  setTimeout(() => {
+  setTimeout(async () => {
+    const audioCtx = new AudioContext();
+    var node = audioCtx.createBufferSource();
+    nodeGain = audioCtx.createGain();
+    pan = audioCtx.createStereoPanner();
+    const res = await fetch("./src/assets/Tom A Extended.wav");
+    const arrayBuffer = await res.arrayBuffer();
+    const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
+    node.buffer = audioBuffer;
+
+    node.connect(nodeGain);
+    nodeGain.connect(pan);
+    pan.connect(audioCtx.destination);
+
+    node.start();
+
+
     const cap = new cv.VideoCapture(video);
 
     const frame = new cv.Mat(video.height, video.width, cv.CV_8UC4);
@@ -99,6 +120,27 @@ export default (id, x = 150, y = 60, w = 63, h = 125) =>
         cv.line(frame, pts[3], pts[0], [255, 0, 0, 255], 3);
         cv.imshow(id, frame);
 
+        var centerX = (pts[0].x + pts[1].x + pts[2].x + pts[3].x) / 4;
+        var centery = (pts[0].y + pts[1].y + pts[2].y + pts[3].y) / 4;
+
+        var area = calcPolygonArea(pts);
+
+        var gainValue = area / (video.width * video.height)
+
+
+        var panValue = parseFloat(((centerX / video.width) * -2) + 1)
+
+        // console.log(panValue);
+
+        if (isFinite(panValue)) {
+          pan.pan.setValueAtTime(panValue, audioCtx.currentTime);
+        }
+
+        if (isFinite(gainValue)) {
+          // todo better mapping
+          nodeGain.gain.setValueAtTime(2 * gainValue, audioCtx.currentTime);
+        }
+
         setTimeout(processVideo, 1000 / FPS - (Date.now() - begin));
       } catch (err) {
         console.error(err);
@@ -107,3 +149,19 @@ export default (id, x = 150, y = 60, w = 63, h = 125) =>
 
     setTimeout(processVideo, 0);
   }, 2000);
+
+  function calcPolygonArea(vertices) {
+    var total = 0;
+
+    for (var i = 0, l = vertices.length; i < l; i++) {
+      var addX = vertices[i].x;
+      var addY = vertices[i == vertices.length - 1 ? 0 : i + 1].y;
+      var subX = vertices[i == vertices.length - 1 ? 0 : i + 1].x;
+      var subY = vertices[i].y;
+
+      total += (addX * addY * 0.5);
+      total -= (subX * subY * 0.5);
+    }
+
+    return Math.abs(total);
+}
