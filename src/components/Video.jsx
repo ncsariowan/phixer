@@ -1,4 +1,5 @@
 import { createEffect, onCleanup, onMount } from 'solid-js';
+import usePoints from '../hooks/usePoints';
 import useVideo from '../hooks/useVideo';
 import { track } from '../util/track';
 import { start, stop } from '../util/video';
@@ -7,7 +8,7 @@ const Video = () => {
   let ref;
   let interactive;
 
-  const points = [];
+  const [points, setPoints] = usePoints();
 
   const { video, streaming, setStreaming } = useVideo();
 
@@ -36,7 +37,7 @@ const Video = () => {
     ctx.lineWidth = 3;
 
     const length = 69;
-    points.push({ x: x - length / 2, y: y - length / 2, w: length, h: length * 2 });
+    setPoints([...points(), { x: x - length / 2, y: y - length / 2, w: length, h: length * 2 }]);
     ctx.strokeRect(x - length / 2, y - length / 2, length, length * 2);
   };
 
