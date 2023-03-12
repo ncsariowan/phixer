@@ -6,7 +6,7 @@ export const track = (id, video, streaming, points) => {
   const frame = new cv.Mat(video.height, video.width, cv.CV_8UC4);
   cap.read(frame);
 
-  const windows = points.map(({ x, y, w, h }) => {
+  const windows = points().map(({ x, y, w, h }) => {
     let trackWindow = new cv.Rect(x, y, w, h);
 
     const roi = frame.roi(trackWindow);

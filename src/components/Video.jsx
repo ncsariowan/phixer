@@ -22,6 +22,7 @@ const Video = () => {
     if (streaming()) {
       track(ref, video, streaming, points);
       interactive.getContext('2d').clearRect(0, 0, interactive.width, interactive.height);
+      interactive.style.display = 'none';
     }
   });
 
