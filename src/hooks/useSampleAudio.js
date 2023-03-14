@@ -17,12 +17,15 @@ class Stem {
     }
 
     play(time) {
-        const sourceNode = ctx.createBufferSource();
-        sourceNode.connect(this.gainNode);
-        console.log(this.buffer);
-        sourceNode.buffer = this.buffer;
+        this.sourceNode = ctx.createBufferSource();
+        this.sourceNode.connect(this.gainNode);
+        this.sourceNode.buffer = this.buffer;
 
-        sourceNode.start(time);
+        this.sourceNode.start(time);
+    }
+
+    stop() {
+        this.sourceNode.stop();
     }
 }
 

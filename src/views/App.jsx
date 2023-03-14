@@ -27,10 +27,17 @@ const App = () => {
       }>Start</button>
       <button onClick={() => {
 
-        const startTime = ctx.currentTime + 0.5;
-        
-        for (const s of stems) {
-          s.play(startTime);
+        if (!playing) {
+          const startTime = ctx.currentTime + 0.5;
+          for (const s of stems) {
+            s.play(startTime);
+          }
+          playing = true;
+        } else {
+          for (const s of stems) {
+            s.stop();
+          }
+          playing = false
         }
 
       }}>Play</button>
