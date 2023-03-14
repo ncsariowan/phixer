@@ -8,6 +8,8 @@ class Stem {
         this.panNode = new StereoPannerNode(ctx);
         this.gainNode.connect(this.panNode);
         this.panNode.connect(ctx.destination);
+
+        this.setGain(0);
     }
 
     async loadBuffer(url) {
@@ -26,6 +28,14 @@ class Stem {
 
     stop() {
         this.sourceNode.stop();
+    }
+
+    setGain(gain) {
+        this.gainNode.gain.setValueAtTime(gain, ctx.currentTime);
+    }
+
+    setPan(pan) {
+        this.panNode.pan.setValueAtTime(pan, ctx.currentTime);
     }
 }
 

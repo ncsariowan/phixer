@@ -1,5 +1,5 @@
 import Video from '../components/Video';
-import useSampleAudio from '../hooks/useSampleAudio';
+import useStems from '../hooks/useStems';
 import useVideo from '../hooks/useVideo';
 import styles from '../styles/app.module.css';
 import { start } from '../util/video';
@@ -8,7 +8,7 @@ const App = () => {
   const ctx = new AudioContext();
 
   const { setStreaming } = useVideo();
-  const { stems } = useSampleAudio();
+  const { stems } = useStems();
 
   var streaming = false;
   var playing = false;

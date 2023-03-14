@@ -1,6 +1,6 @@
 // x = 150, y = 60, w = 63, h = 125
 
-export const track = (id, video, streaming, points) => {
+export const track = (id, video, streaming, points, callback) => {
   const cap = new cv.VideoCapture(video);
 
   const frame = new cv.Mat(video.height, video.width, cv.CV_8UC4);
@@ -76,6 +76,8 @@ export const track = (id, video, streaming, points) => {
         //   { x: points[i].x + points[i].w, y: points[i].y + points[i].h },
         //   { x: points[i].x, y: points[i].y + points[i].h }
         // ];
+
+        callback(i, pts);
 
         cv.line(frame, pts[0], pts[1], [255, 0, 0, 255], 3);
         cv.line(frame, pts[1], pts[2], [255, 0, 0, 255], 3);
