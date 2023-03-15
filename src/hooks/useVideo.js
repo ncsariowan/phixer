@@ -7,7 +7,10 @@ const video = document.createElement('video');
 video.autoplay = true;
 video.playsInline = true;
 
-video.height = 480;
-video.width = 640;
+const width = document.body.getBoundingClientRect().width / 2;
+const height = 0.75 * width;
 
-export default () => ({ video, streaming, setStreaming });
+video.height = height;
+video.width = width;
+
+export default () => ({ video, streaming, setStreaming, height, width });

@@ -11,7 +11,7 @@ const Video = () => {
 
   const [points, setPoints] = usePoints();
 
-  const { video, streaming, setStreaming } = useVideo();
+  const { video, streaming, setStreaming, height, width } = useVideo();
   const { stems } = useStems();
 
   video.style.transform = 'rotateY(180deg)';
@@ -25,15 +25,15 @@ const Video = () => {
 
       let stem = stems[i];
 
-      var centerX = (points[0].x + points[1].x + points[2].x + points[3].x) / 4;
-      var centery = (points[0].y + points[1].y + points[2].y + points[3].y) / 4;
+      let centerX = (points[0].x + points[1].x + points[2].x + points[3].x) / 4;
+      let centery = (points[0].y + points[1].y + points[2].y + points[3].y) / 4;
 
-      var area = calcPolygonArea(points);
+      let area = calcPolygonArea(points);
 
-      var gainValue = area / (video.width * video.height)
+      let gainValue = area / (video.width * video.height);
 
 
-      var panValue = parseFloat(((centerX / video.width) * -2) + 1)
+      let panValue = parseFloat(((centerX / video.width) * -2) + 1);
 
 
       if (isFinite(panValue)) {
@@ -42,7 +42,7 @@ const Video = () => {
 
       if (isFinite(gainValue)) {
         // todo better mapping
-        stem.setGain((2 * gainValue));
+        stem.setGain((10 * gainValue));
       }
 
 
@@ -74,23 +74,24 @@ const Video = () => {
   };
 
   return (
-    <div style={ { position: 'relative', height: '480px', width: '640px' } }>
+    <div style={ { position: 'relative', height: `${ height }px`, width: `${ width }px` } }>
       { video }
       <canvas ref={ ref } style={ { position: 'absolute' } } />
-      <canvas ref={ interactive } style={ { position: 'absolute', 'z-index': 10 } } onClick={ handleClick } width="640" height="480" />
+      <canvas ref={ interactive } style={ { position: 'absolute', 'z-index': 10 } } onClick={ handleClick } width={ width }
+              height={ height } />
     </div>
   );
 };
 
 
 function calcPolygonArea(vertices) {
-  var total = 0;
+  let total = 0;
 
-  for (var i = 0, l = vertices.length; i < l; i++) {
-    var addX = vertices[i].x;
-    var addY = vertices[i == vertices.length - 1 ? 0 : i + 1].y;
-    var subX = vertices[i == vertices.length - 1 ? 0 : i + 1].x;
-    var subY = vertices[i].y;
+  for (let i = 0, l = vertices.length; i < l; i++) {
+    let addX = vertices[i].x;
+    let addY = vertices[i === vertices.length - 1 ? 0 : i + 1].y;
+    let subX = vertices[i === vertices.length - 1 ? 0 : i + 1].x;
+    let subY = vertices[i].y;
 
     total += (addX * addY * 0.5);
     total -= (subX * subY * 0.5);
