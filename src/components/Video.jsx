@@ -14,7 +14,7 @@ const Video = () => {
   const { video, streaming, setStreaming, height, width } = useVideo();
   const { stems } = useStems();
 
-  video.style.transform = 'rotateY(180deg)';
+  // video.style.transform = 'rotateY(180deg)';
   video.style.position = 'absolute';
   video.style['z-index'] = '-10';
 
@@ -37,7 +37,7 @@ const Video = () => {
 
 
       if (isFinite(panValue)) {
-        stem.setPan((panValue));
+        stem.setPan(-(panValue));
       }
 
       if (isFinite(gainValue)) {
@@ -61,7 +61,8 @@ const Video = () => {
 
   const handleClick = e => {
     const { left, top, width } = interactive.getBoundingClientRect();
-    const x = width - (e.clientX - left);
+    // const x = width - (e.clientX - left);
+    const x = e.clientX - left;
     const y = e.clientY - top;
 
     const ctx = interactive.getContext('2d');
