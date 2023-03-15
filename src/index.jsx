@@ -3,9 +3,12 @@ import { hashIntegration, Route, Router, Routes } from '@solidjs/router';
 import { lazy } from 'solid-js';
 import { render } from 'solid-js/web';
 import Home from './Home';
+import canvasFix from '../src/util/canvasFix';
 
 import './styles/index.css';
 import Mapping from './views/Mapping';
+
+canvasFix();
 
 const App = lazy(() => import('./views/App'));
 

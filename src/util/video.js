@@ -5,7 +5,7 @@ export const stop = (video, setStreaming) => {
 
 export const start = video =>
   navigator.mediaDevices
-    .getUserMedia({ video: true, audio: false })
+    .getUserMedia({ video: { facingMode: 'environment' }, audio: false })
     .then(s => {
       video.srcObject = s;
       video.play();
