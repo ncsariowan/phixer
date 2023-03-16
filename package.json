@@ -13,12 +13,16 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.7.0",
+    "gh-pages": "^5.0.0",
     "solid-js": "^1.6.11"
   },
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "yarn run build",
+    "postdeploy": "rm -rf dist/"
   }
 }
